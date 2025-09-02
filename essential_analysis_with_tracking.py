@@ -152,7 +152,6 @@ class EssentialAnalysisTracker:
         # Filter to weeks 28-48 only
         target_weeks = list(range(28, 49))
         data = data[data['week_num'].isin(target_weeks)]
-        print(f"\nFiltered to target weeks 28-48: {len(data):,} responses")
         
         # Period 1: Weeks 28-33
         period1_mask = data['week_num'].between(28, 33)
